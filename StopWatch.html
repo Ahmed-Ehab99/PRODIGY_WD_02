@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 2</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+        <div class="container">
+            <div class="watch">
+                <div class="outer-circle" id="outer-circle">
+                    <div class="inner-circle">
+                        <span class="text-white minute" id="min">0 :</span>
+                        <span class="text-white sec" id="sec">&nbsp;0 :</span>
+                        <span class="text-white msec" id="msec">&nbsp;0</span>
+                    </div>
+                </div>
+                <div class="button-wrapper d-flex justify-content-between mt-3">
+                    <button class="button hidden" id="reset">Reset</button>
+                    <button class="button" id="play">Play</button>
+                    <button class="button hidden" id="lap">Lap</button>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <ul class="laps" id="laps">
+                    <button class="lap-clear-button hidden" id="lap-clear-button">Clear All</button>
+                </ul>
+            </div>
+            
+        </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

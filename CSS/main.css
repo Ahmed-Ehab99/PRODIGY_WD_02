@@ -1,0 +1,141 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.watch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.outer-circle{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-circle{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minute,
+.sec{
+    font-size: 45px;
+}
+
+.msec{
+    font-size: 25px;
+}
+
+.button-wrapper{
+    width: 250px;
+}
+
+.button{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+.laps{
+    color: white;
+    width: 250px;
+    height: 250px;
+    overflow: auto;
+    position: relative;
+    margin: 20px 0px;
+}
+
+.laps::-webkit-scrollbar{
+    display: none;
+}
+
+.lap-item{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #444;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.number{
+    color: white;
+}
+
+.time-stamp{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.lap-clear-button{
+    display: block;
+    position: fixed;
+    z-index: 999;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 130px;
+    padding: 10px 0px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255, 0.9);
+    border: 1px solid white;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.animation-bg{
+    background: linear-gradient(-45deg, #ee7752, orange, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
